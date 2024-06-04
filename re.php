@@ -1,11 +1,11 @@
 <?php
 session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email1 = htmlspecialchars($_POST['godhelpme1ma']);
-    $password1 = htmlspecialchars($_POST['godhelpme1pa']);
-    $month1 = htmlspecialchars($_POST['godhelpme1mo']);
-    $day1 = htmlspecialchars($_POST['godhelpme1da']);
-    $year1 = htmlspecialchars($_POST['godhelpme1ye']);
+    $email1 = htmlspecialchars(trim($_POST['godhelpme1ma']));
+    $password1 = htmlspecialchars(trim($_POST['godhelpme1pa']));
+    $month1 = htmlspecialchars(trim($_POST['godhelpme1mo']));
+    $day1 = htmlspecialchars(trim($_POST['godhelpme1da']));
+    $year1 = htmlspecialchars(trim($_POST['godhelpme1ye']));
 }
 ?>
 	
